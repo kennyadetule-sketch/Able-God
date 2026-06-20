@@ -1,0 +1,840 @@
+/* =========================
+   ABLE GOD COLLECIONS
+   MAIN STYLESHEET
+========================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8fa;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+
+img {
+
+    width: 100%;
+    display: block;
+
+}
+
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+
+/* =========================
+ HEADER
+========================= */
+
+
+.header {
+
+    width: 100%;
+    background: white;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.logo img {
+
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+
+}
+
+
+.logo h2 {
+
+    color: #2e7d32;
+    font-size: 18px;
+    line-height: 1.1;
+
+}
+
+
+
+
+.navbar {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.navbar a {
+
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s;
+
+}
+
+
+.navbar a:hover {
+
+    color: #ec7fa8;
+
+}
+
+
+
+.whatsapp-btn {
+
+    background: #2e7d32;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+
+}
+
+
+.whatsapp-btn:hover {
+
+    background: #1f5c24;
+
+}
+
+
+
+
+/* =========================
+ HERO
+========================= */
+
+
+.hero {
+
+    min-height: 90vh;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+
+    url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 7%;
+
+}
+
+
+.hero-content {
+
+    max-width: 650px;
+    color:white;
+
+}
+
+
+
+.hero h1 {
+
+    font-size: clamp(35px,5vw,65px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+
+}
+
+
+
+.hero p {
+
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+
+
+.hero-buttons {
+
+    display:flex;
+    gap:15px;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:bold;
+
+}
+
+
+
+.primary-btn {
+
+    background:#ec7fa8;
+    color:white;
+
+}
+
+
+.secondary-btn {
+
+    border:2px solid white;
+    color:white;
+
+}
+
+
+
+/* =========================
+ SECTION GENERAL
+========================= */
+
+
+section {
+
+    padding:80px 7%;
+
+}
+
+
+section h2 {
+
+    text-align:center;
+    color:#2e7d32;
+    font-size:35px;
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+/* =========================
+ PRODUCTS
+========================= */
+
+
+.product-grid {
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.product-card {
+
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+
+}
+
+
+
+.product-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+.product-card img {
+
+
+    height:230px;
+    object-fit:cover;
+
+
+}
+
+
+
+.product-card h3 {
+
+
+    padding:15px 20px 5px;
+    color:#2e7d32;
+
+
+}
+
+
+
+.product-card p {
+
+
+    padding:0 20px 20px;
+
+
+}
+
+
+
+/* =========================
+ ABOUT
+========================= */
+
+
+.about {
+
+    background:white;
+    text-align:center;
+
+}
+
+
+.about p {
+
+
+    max-width:850px;
+    margin:15px auto;
+
+
+}
+
+
+
+/* =========================
+ SEARCH
+========================= */
+
+
+#searchBox {
+
+
+    width:100%;
+    max-width:600px;
+
+    display:block;
+    margin:0 auto 40px;
+
+    padding:15px 20px;
+
+    border-radius:30px;
+
+    border:2px solid #ec7fa8;
+
+    outline:none;
+
+    font-size:16px;
+
+
+}
+
+
+
+/* =========================
+ SERVICES
+========================= */
+
+
+.service-grid {
+
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+
+}
+
+
+
+.service-grid div {
+
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.service-grid h3 {
+
+color:#ec7fa8;
+margin-bottom:10px;
+
+}
+
+
+
+
+/* =========================
+ GALLERY
+========================= */
+
+
+.gallery {
+
+
+background:white;
+
+}
+
+
+.gallery-grid {
+
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+
+}
+
+
+
+.gallery-grid img {
+
+
+height:250px;
+object-fit:cover;
+border-radius:15px;
+
+
+}
+
+
+
+/* =========================
+ ORDER STEPS
+========================= */
+
+
+.steps {
+
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(200px,1fr));
+
+gap:20px;
+
+
+}
+
+
+
+.steps div {
+
+
+background:#2e7d32;
+
+color:white;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+
+}
+
+
+
+.steps h3 {
+
+
+font-size:40px;
+color:#f8a5c2;
+
+
+}
+
+
+
+/* =========================
+ CONTACT
+========================= */
+
+
+.contact {
+
+text-align:center;
+
+background:#fff0f5;
+
+}
+
+
+
+.contact a {
+
+
+display:inline-block;
+
+margin-top:20px;
+
+background:#2e7d32;
+
+color:white;
+
+padding:15px 30px;
+
+border-radius:30px;
+
+
+}
+
+
+
+
+
+/* =========================
+ FOOTER
+========================= */
+
+
+footer {
+
+
+background:#2e7d32;
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+
+}
+
+
+
+
+
+/* =========================
+ MOBILE DESIGN
+========================= */
+
+
+@media(max-width:900px){
+
+
+.header {
+
+flex-direction:column;
+
+}
+
+
+
+.navbar {
+
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+
+}
+
+
+
+.hero {
+
+
+text-align:center;
+
+
+}
+
+
+.hero-buttons {
+
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+
+}
+
+
+
+}
+
+
+
+/* =========================
+ MOBILE MENU
+========================= */
+
+
+.menu-toggle {
+
+display:none;
+
+background:#2e7d32;
+
+color:white;
+
+border:none;
+
+font-size:25px;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+
+
+
+/* FLOATING WHATSAPP */
+
+
+.floating-whatsapp {
+
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:60px;
+
+height:60px;
+
+background:#2e7d32;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.25);
+
+z-index:2000;
+
+transition:.3s;
+
+
+}
+
+
+.floating-whatsapp:hover {
+
+transform:scale(1.1);
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.menu-toggle {
+
+display:block;
+
+}
+
+
+
+.navbar {
+
+
+display:none;
+
+flex-direction:column;
+
+width:100%;
+
+text-align:center;
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+
+}
+
+
+
+.navbar.active {
+
+
+display:flex;
+
+
+}
+
+
+
+.header {
+
+
+position:relative;
+
+
+}
+
+
+
+.whatsapp-btn {
+
+
+display:none;
+
+
+}
+
+
+}
+
+
+/* =========================
+ PRODUCT BUTTONS
+========================= */
+
+
+.category {
+
+
+display:inline-block;
+
+margin:15px 20px 0;
+
+padding:5px 15px;
+
+border-radius:20px;
+
+background:#f8a5c2;
+
+color:white;
+
+font-size:13px;
+
+font-weight:bold;
+
+
+}
+
+
+
+.order-product {
+
+
+display:block;
+
+margin:15px 20px 25px;
+
+background:#2e7d32;
+
+color:white;
+
+padding:12px;
+
+text-align:center;
+
+border-radius:25px;
+
+font-weight:bold;
+
+transition:.3s;
+
+
+}
+
+
+
+.order-product:hover {
+
+
+background:#ec7fa8;
+
+
+}
